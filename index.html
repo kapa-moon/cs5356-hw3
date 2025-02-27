@@ -9,32 +9,20 @@
 <body>
   <header>
     <div class="profile-container">
-      <img id="profile-pic" src="profile1.jpg" alt="Yuewen's Profile Picture" class="profile-pic">
-      <button id="flip-pic" aria-label="Flip profile picture">↻</button>
+      <img id="profile-pic" src="profile.png" alt="Yuewen's Profile Picture" class="profile-pic">
     </div>
     
-    <div class="weather-container">
-      <span id="weather-info">Loading weather...</span>
+    <div class="joke-container">
+      <span id="joke-display">Loading joke...</span>
+      <button id="new-joke-btn">Get New Joke</button>
     </div>
   </header>
   
   <main>
     <section class="bio">
-      <h3>My name is Yuewen.</h3>
-      <p>I am a second year master's student at Cornell Tech. My concentration is called Connective Media, which is confusing. But if anybody asks me I basically say I am in a program that is a mix of cs and hci.</p>
-      
-      <button id="open-dialog">Learn More About My Projects</button>
-      
-      <dialog id="projects-dialog">
-        <h4>My Projects</h4>
-        <p>Here are some of the projects I've been working on during my time at Cornell Tech:</p>
-        <ul>
-          <li>Human-AI interaction research</li>
-          <li>Web development with modern frameworks</li>
-          <li>User experience design studies</li>
-        </ul>
-        <button id="close-dialog">Close</button>
-      </dialog>
+      <h3 class="bio-title">My name is Yuewen.</h3>
+      <button id="learn-more-btn">Learn more</button>
+      <p class="bio-text">I am a second year master's student at Cornell Tech. My concentration is called Connective Media, which is confusing. But if anybody asks me I basically say I am in a program that is a mix of cs and hci.</p>
     </section>
   </main>
   
