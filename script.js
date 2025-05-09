@@ -4,6 +4,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const newJokeBtn = document.getElementById('new-joke-btn');
   const learnMoreBtn = document.getElementById('learn-more-btn');
   const bioText = document.querySelector('.bio-text');
+  const bioDialog = document.getElementById('bio-dialog');
+  const closeDialogBtn = document.getElementById('close-dialog-btn');
+
+  if (closeDialogBtn && bioDialog) {
+    closeDialogBtn.addEventListener('click', function() {
+      bioDialog.close();
+    });
+  }
   
   // Initially hide the bio text
   bioText.style.display = 'none';
